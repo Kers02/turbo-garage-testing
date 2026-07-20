@@ -1,34 +1,50 @@
 # 🚗 Turbo Garage Demo
 
-Welcome to **Turbo Garage**, a training project designed to practice Git concepts using a car inventory management system.
+Welcome to **Turbo Garage**, a training project designed to practice Git using a real-world garage inventory scenario.
 
 ---
 
-# 📖 Scenario
+# 📖 Story
 
 Mr Axel owns a garage called **Turbo Garage**.
 
-His team has decided to start using Git to properly manage their project files and collaborate more efficiently.
+For years, he managed his inventory using multiple copies of files stored on his laptop:
 
-Your task is to help Mr Axel build and maintain the garage inventory while applying common Git workflows used by software development teams.
+- CarParts_v1.txt
+- CarParts_Final.txt
+- CarParts_Final_v2.txt
+- CarParts_Really_Final.txt
+
+As the garage grew, more team members started contributing to the project. Soon, nobody knew which version was the latest or who had made specific changes.
+
+To solve this problem, Mr Axel decided to use Git.
+
+Your mission is to help him build and maintain the Turbo Garage inventory while learning the most common Git workflows used by development teams.
 
 ---
 
-# 🎯 Your Mission
+# 🎯 Demo Objective
 
-Complete the following tasks throughout the demo.
+Throughout this exercise, you will:
+
+- Build new features
+- Share work with teammates
+- Retrieve updates from GitHub
+- Reuse existing work
+- Organize project history
+- Clean up mistakes
 
 ---
 
-# 1. Setup The Project
+# 🚦 Demo Tasks
+
+## Task 1 - Bring The Project To Your Laptop
 
 ### Objective
 
-Bring the online Turbo Garage project onto your local machine.
+Download the Turbo Garage repository from GitHub to your local machine.
 
-### Expected Result
-
-You should now have a local copy of the repository containing:
+### Starting Repository
 
 ```text
 README.md
@@ -36,11 +52,11 @@ README.md
 
 ---
 
-# 2. Create Your Working Area
+## Task 2 - Create Your Workspace
 
 ### Objective
 
-Create a dedicated workspace for developing the car inventory feature.
+Create a dedicated branch where all inventory work will be performed.
 
 ### Branch Name
 
@@ -50,11 +66,11 @@ feature/car-parts
 
 ### Expected Result
 
-All future work will be performed in this branch.
+All future work will be isolated from the main branch.
 
 ---
 
-# 3. Create The Engine Parts Inventory
+## Task 3 - Build The Engine Inventory
 
 ### Create File
 
@@ -72,11 +88,11 @@ Radiator
 
 ### Objective
 
-Save this work as its own checkpoint in project history.
+Save this inventory as its own checkpoint.
 
 ---
 
-# 4. Create The Body Parts Inventory
+## Task 4 - Build The Body Inventory
 
 ### Create File
 
@@ -94,7 +110,7 @@ Bumper
 
 ### Objective
 
-Save this work separately from the Engine Parts inventory.
+Save this inventory as a separate checkpoint.
 
 ### Expected History
 
@@ -106,19 +122,19 @@ Add body parts list
 
 ---
 
-# 5. Publish Your Work
+## Task 5 - Share The Feature
 
 ### Objective
 
-Share your feature branch with the rest of the team through GitHub.
+Publish the branch so other developers can see your work on GitHub.
 
 ### Expected Result
 
-A new remote branch becomes available online.
+A new branch becomes available online.
 
 ---
 
-# 6. Update The Existing Inventories
+## Task 6 - Correct Missing Information
 
 The mechanics have identified missing parts.
 
@@ -144,39 +160,80 @@ Headlight
 
 ### Objective
 
-Update the existing history instead of creating additional commits.
+Update the existing checkpoints instead of creating new "fix" checkpoints.
 
 ---
 
-# 7. Check For Team Updates
+## Task 7 - Check For Team Updates
+
+### Scenario
+
+While you were working, teammates pushed new work to GitHub.
 
 ### Objective
 
-Determine whether teammates have added new content to the remote repository.
+Check whether new updates are available online.
 
-### Expected Result
+### Available Remote Changes
 
-You can see if your local repository is behind the remote version.
+A teammate updated:
+
+```text
+README.md
+```
+
+with:
+
+```text
+Garage Notice
+
+Turbo Garage inventory is now managed using Git.
+```
 
 ---
 
-# 8. Download Team Updates
+## Task 8 - Download Team Updates
 
 ### Objective
 
-Bring the latest remote changes into your local project.
+Bring the latest project updates into your local repository.
 
 ### Expected Result
 
-Your local repository is synchronized with GitHub.
+Your local project is synchronized with GitHub.
 
 ---
 
-# 9. Merge Another Completed Feature
+## Task 9 - Refresh Your Feature Branch
 
-A teammate has completed a service package feature.
+### Scenario
 
-### Create File
+The main project has progressed while you were working.
+
+### Objective
+
+Move your feature work so it starts from the latest version of the main branch.
+
+### Expected Result
+
+Your feature contains both:
+
+- Latest project updates
+- Your own inventory work
+
+---
+
+## Task 10 - Integrate A Completed Feature
+
+A teammate has already finished a Service Package feature.
+
+### Remote Branch Available
+
+```text
+feature/service-package
+```
+
+### File Included
 
 ```text
 ServicePackage.txt
@@ -191,29 +248,21 @@ Premium Service
 
 ### Objective
 
-Combine this completed work with your current branch.
+Combine this completed feature with your branch.
 
 ---
 
-# 10. Reorganize Your Work
+## Task 11 - Reuse Existing Work
 
-The main branch has received additional updates.
+Another teammate has created an Interior Parts feature.
 
-### Objective
+### Remote Branch Available
 
-Move your work so it starts from the latest version of the main project.
+```text
+feature/interior-parts
+```
 
-### Expected Result
-
-Your branch contains the latest project changes while keeping your own work.
-
----
-
-# 11. Reuse Existing Work
-
-A teammate already created an interior inventory.
-
-### Create File
+### File Included
 
 ```text
 InteriorParts.txt
@@ -229,11 +278,11 @@ Dashboard
 
 ### Objective
 
-Bring only that specific change into your branch without taking the entire branch.
+Reuse only the Interior Parts change without taking the entire branch.
 
 ---
 
-# 12. Start A Maintenance Checklist
+## Task 12 - Start A Maintenance Checklist
 
 ### Create File
 
@@ -241,36 +290,26 @@ Bring only that specific change into your branch without taking the entire branc
 ServiceChecklist.txt
 ```
 
-### Content
+### Add Content
 
 ```text
 Oil Change
 Tyre Pressure
 ```
 
-### Objective
+### Scenario
 
-Work begins on the checklist but is not yet complete.
-
----
-
-# 13. Put Work Aside
-
-An urgent production issue appears.
+An urgent issue suddenly appears before the work is complete.
 
 ### Objective
 
-Temporarily store the unfinished checklist and switch tasks safely.
-
-### Expected Result
-
-Your working directory becomes clean while keeping the unfinished work available for later.
+Temporarily put the unfinished work aside.
 
 ---
 
-# 14. Rename The Feature
+## Task 13 - Improve The Branch Name
 
-The feature now contains:
+The branch now contains:
 
 - Engine Parts
 - Body Parts
@@ -278,7 +317,13 @@ The feature now contains:
 - Service Packages
 - Maintenance Information
 
-### Rename Branch To
+### Current Name
+
+```text
+feature/car-parts
+```
+
+### New Name
 
 ```text
 feature/car-inventory
@@ -286,13 +331,13 @@ feature/car-inventory
 
 ### Objective
 
-Use a branch name that better reflects what the feature contains.
+Use a branch name that better represents its content.
 
 ---
 
-# 15. Continue The Checklist
+## Task 14 - Continue The Checklist
 
-Return to the unfinished checklist.
+Return to the maintenance checklist.
 
 ### Update ServiceChecklist.txt
 
@@ -314,11 +359,11 @@ Coolant Check
 
 ### Objective
 
-Complete the checklist and save the finished work.
+Finish and save the checklist.
 
 ---
 
-# 16. Remove Engine Management
+## Task 15 - Remove Engine Management
 
 The garage has purchased a dedicated Engine Management System.
 
@@ -332,13 +377,13 @@ Remove the Engine Parts feature from project history.
 EngineParts.txt
 ```
 
-no longer exists in the branch history.
+should no longer exist in the branch history.
 
 ---
 
-# 17. Remove The Checklist Feature
+## Task 16 - Remove The Checklist Feature
 
-Management decides not to track maintenance checklists in this project.
+Management decides that maintenance tracking belongs in a different system.
 
 ### Objective
 
@@ -350,13 +395,11 @@ Move the project back to a state before the checklist feature existed.
 ServiceChecklist.txt
 ```
 
-is no longer part of the latest version of the project.
+should no longer be part of the latest version of the project.
 
 ---
 
-# ✅ Final Repository
-
-At the end of the exercise, the repository should contain:
+# ✅ Expected Final Repository
 
 ```text
 README.md
@@ -374,25 +417,41 @@ ServiceChecklist.txt
 
 ---
 
-# 🎓 Concepts Practiced
+# 🎓 Git Concepts Practiced
 
-- Clone
-- Branch
-- Commit
-- Push
-- Fetch
-- Pull
-- Amend
-- Merge
-- Rebase
-- Cherry-Pick
-- Stash
-- Stash Pop
-- Rename Branch
-- Interactive Rebase
-- Reset
+| Task | Concept |
+|--------|-----------|
+| Bring project locally | Clone |
+| Create workspace | Branch |
+| Save progress | Commit |
+| Share work online | Push |
+| Check for updates | Fetch |
+| Download updates | Pull |
+| Update previous checkpoint | Amend |
+| Integrate completed feature | Merge |
+| Update branch from latest project | Rebase |
+| Reuse one specific change | Cherry-Pick |
+| Save unfinished work temporarily | Stash |
+| Resume unfinished work | Stash Pop |
+| Rename workspace | Branch Rename |
+| Remove specific history | Interactive Rebase |
+| Move project backward | Reset |
 
 ---
 
-🚗 **Turbo Garage**  
-*Learn Git by managing a real-world garage inventory project.*
+# 🚀 Completion Goal
+
+By the end of this exercise, Mr Axel will know:
+
+> Which version is the latest,
+>
+> who made each change,
+>
+> how to collaborate safely,
+>
+> and how to recover from mistakes without losing valuable work.
+
+---
+
+**🚗 Welcome to Turbo Garage**  
+*Where car parts meet version control.*
