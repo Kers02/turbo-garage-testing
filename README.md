@@ -455,3 +455,7 @@ By the end of this exercise, Mr Axel will know:
 
 **🚗 Welcome to Turbo Garage**  
 *Where car parts meet version control.*
+
+## Garage Notice
+
+Turbo Garage inventory is now managed using Git.
