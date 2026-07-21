@@ -1,0 +1,6 @@
+Door 
+Bonnet
+Bumper
+Mirror
+Windscreen
+Headlight
