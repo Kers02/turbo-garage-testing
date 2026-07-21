@@ -42,7 +42,7 @@ Throughout this exercise, you will:
 
 ### Objective
 
-Download the Turbo Garage repository from GitHub to your local machine.
+Download the Turbo Garage repository from GitHub.
 
 ### Starting Repository
 
@@ -54,19 +54,15 @@ README.md
 
 ## Task 2 - Create Your Workspace
 
-### Objective
-
-Create a dedicated branch where all inventory work will be performed.
-
-### Branch Name
+### Create Branch
 
 ```text
 feature/car-parts
 ```
 
-### Expected Result
+### Objective
 
-All future work will be isolated from the main branch.
+Create a safe workspace where inventory development can take place.
 
 ---
 
@@ -84,11 +80,14 @@ EngineParts.txt
 Engine
 Battery
 Radiator
+Spark Plug
+Alternator
+Fuel Pump
 ```
 
 ### Objective
 
-Save this inventory as its own checkpoint.
+Save the engine inventory as its own checkpoint.
 
 ---
 
@@ -110,7 +109,7 @@ Bumper
 
 ### Objective
 
-Save this inventory as a separate checkpoint.
+Save the body inventory separately from the engine inventory.
 
 ### Expected History
 
@@ -122,31 +121,21 @@ Add body parts list
 
 ---
 
-## Task 5 - Share The Feature
+## Task 5 - Share Your Work
 
 ### Objective
 
-Publish the branch so other developers can see your work on GitHub.
+Publish your branch so teammates can view it on GitHub.
 
 ### Expected Result
 
-A new branch becomes available online.
+A new remote branch becomes available online.
 
 ---
 
-## Task 6 - Correct Missing Information
+## Task 6 - Update The Body Inventory
 
-The mechanics have identified missing parts.
-
-### Update EngineParts.txt
-
-Add:
-
-```text
-Spark Plug
-Alternator
-Fuel Pump
-```
+Additional body parts need to be added.
 
 ### Update BodyParts.txt
 
@@ -160,7 +149,7 @@ Headlight
 
 ### Objective
 
-Update the existing checkpoints instead of creating new "fix" checkpoints.
+Update the most recent checkpoint instead of creating a new one.
 
 ---
 
@@ -168,21 +157,13 @@ Update the existing checkpoints instead of creating new "fix" checkpoints.
 
 ### Scenario
 
-While you were working, teammates pushed new work to GitHub.
+While you were working, teammates added new work online.
 
 ### Objective
 
-Check whether new updates are available online.
+Check for available updates.
 
-### Available Remote Changes
-
-A teammate updated:
-
-```text
-README.md
-```
-
-with:
+### Available Remote Updates
 
 ```text
 Garage Notice
@@ -196,44 +177,44 @@ Turbo Garage inventory is now managed using Git.
 
 ### Objective
 
-Bring the latest project updates into your local repository.
+Synchronize your local project with GitHub.
 
 ### Expected Result
 
-Your local project is synchronized with GitHub.
+Your local repository contains the latest project updates.
 
 ---
 
-## Task 9 - Refresh Your Feature Branch
+## Task 9 - Refresh Your Branch
 
 ### Scenario
 
-The main project has progressed while you were working.
+The main branch has progressed while you were working.
 
 ### Objective
 
-Move your feature work so it starts from the latest version of the main branch.
+Move your feature work onto the latest version of the project.
 
 ### Expected Result
 
-Your feature contains both:
+Your branch contains:
 
-- Latest project updates
-- Your own inventory work
+- Latest main branch updates
+- Your inventory changes
 
 ---
 
 ## Task 10 - Integrate A Completed Feature
 
-A teammate has already finished a Service Package feature.
+A teammate has already completed a service package feature.
 
-### Remote Branch Available
+### Available Branch
 
 ```text
 feature/service-package
 ```
 
-### File Included
+### File
 
 ```text
 ServicePackage.txt
@@ -248,21 +229,21 @@ Premium Service
 
 ### Objective
 
-Combine this completed feature with your branch.
+Bring this completed work into your branch.
 
 ---
 
 ## Task 11 - Reuse Existing Work
 
-Another teammate has created an Interior Parts feature.
+A teammate has also created an interior parts feature.
 
-### Remote Branch Available
+### Available Branch
 
 ```text
 feature/interior-parts
 ```
 
-### File Included
+### File
 
 ```text
 InteriorParts.txt
@@ -278,7 +259,7 @@ Dashboard
 
 ### Objective
 
-Reuse only the Interior Parts change without taking the entire branch.
+Bring only this change into your branch without taking the entire branch.
 
 ---
 
@@ -299,17 +280,17 @@ Tyre Pressure
 
 ### Scenario
 
-An urgent issue suddenly appears before the work is complete.
+An urgent issue appears before the work is complete.
 
 ### Objective
 
-Temporarily put the unfinished work aside.
+Temporarily store your unfinished work.
 
 ---
 
 ## Task 13 - Improve The Branch Name
 
-The branch now contains:
+The feature now contains:
 
 - Engine Parts
 - Body Parts
@@ -331,7 +312,7 @@ feature/car-inventory
 
 ### Objective
 
-Use a branch name that better represents its content.
+Choose a branch name that better reflects the feature.
 
 ---
 
@@ -359,7 +340,7 @@ Coolant Check
 
 ### Objective
 
-Finish and save the checklist.
+Complete and save the checklist.
 
 ---
 
@@ -369,7 +350,7 @@ The garage has purchased a dedicated Engine Management System.
 
 ### Objective
 
-Remove the Engine Parts feature from project history.
+Remove the Engine Parts work from project history.
 
 ### Expected Result
 
@@ -383,7 +364,7 @@ should no longer exist in the branch history.
 
 ## Task 16 - Remove The Checklist Feature
 
-Management decides that maintenance tracking belongs in a different system.
+Management decides maintenance tracking belongs in another system.
 
 ### Objective
 
@@ -395,7 +376,7 @@ Move the project back to a state before the checklist feature existed.
 ServiceChecklist.txt
 ```
 
-should no longer be part of the latest version of the project.
+should no longer exist in the latest version of the project.
 
 ---
 
@@ -427,11 +408,11 @@ ServiceChecklist.txt
 | Share work online | Push |
 | Check for updates | Fetch |
 | Download updates | Pull |
-| Update previous checkpoint | Amend |
-| Integrate completed feature | Merge |
+| Correct latest commit | Amend |
 | Update branch from latest project | Rebase |
+| Integrate completed feature | Merge |
 | Reuse one specific change | Cherry-Pick |
-| Save unfinished work temporarily | Stash |
+| Save unfinished work | Stash |
 | Resume unfinished work | Stash Pop |
 | Rename workspace | Branch Rename |
 | Remove specific history | Interactive Rebase |
