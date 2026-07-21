@@ -442,3 +442,7 @@ By the end of this exercise, Mr Axel will know:
 Turbo Garage inventory is now managed using Git.
 
 
+
+## Garage Notice
+
+Turbo Garage inventory is now managed using Git.
