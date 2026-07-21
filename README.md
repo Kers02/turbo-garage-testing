@@ -344,39 +344,45 @@ Complete and save the checklist.
 
 ---
 
-## Task 15 - Remove Engine Management
-
-The garage has purchased a dedicated Engine Management System.
-
-### Objective
-
-Remove the Engine Parts work from project history.
-
-### Expected Result
-
-```text
-EngineParts.txt
-```
-
-should no longer exist in the branch history.
 
 ---
 
-## Task 16 - Remove The Checklist Feature
+## Task 15 - Oops, Wrong Change
 
-Management decides maintenance tracking belongs in another system.
+While updating the maintenance checklist, Mr Axel accidentally adds:
+
+```text
+Replace Engine
+```
+
+### Incorrect File
+
+```text
+Oil Change
+Tyre Pressure
+Brake Inspection
+Coolant Check
+Replace Engine
+```
 
 ### Objective
 
-Move the project back to a state before the checklist feature existed.
+Remove the unwanted modification and return the file to the last saved version.
 
 ### Expected Result
 
 ```text
-ServiceChecklist.txt
+Oil Change
+Tyre Pressure
+Brake Inspection
+Coolant Check
 ```
 
-should no longer exist in the latest version of the project.
+### Learning Point
+
+Sometimes mistakes are made before a commit is created.
+
+In this case, Mr Axel simply wants to discard the unwanted file changes and restore the file to its previous state.
 
 ---
 
@@ -384,15 +390,10 @@ should no longer exist in the latest version of the project.
 
 ```text
 README.md
+EngineParts.txt
 BodyParts.txt
 InteriorParts.txt
 ServicePackage.txt
-```
-
-### Removed During The Exercise
-
-```text
-EngineParts.txt
 ServiceChecklist.txt
 ```
 
@@ -415,8 +416,7 @@ ServiceChecklist.txt
 | Save unfinished work | Stash |
 | Resume unfinished work | Stash Pop |
 | Rename workspace | Branch Rename |
-| Remove specific history | Interactive Rebase |
-| Move project backward | Reset |
+| Discard unwanted file changes | Restore |
 
 ---
 
@@ -436,9 +436,4 @@ By the end of this exercise, Mr Axel will know:
 
 **🚗 Welcome to Turbo Garage**  
 *Where car parts meet version control.*
-
-## Garage Notice
-
-Turbo Garage inventory is now managed using Git.
-
-
+``
