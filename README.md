@@ -438,4 +438,3 @@ By the end of this exercise, Mr Axel will know:
 *Where car parts meet version control.*
 
 
-** Let's learn together **
